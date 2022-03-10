@@ -13,7 +13,7 @@
             <el-col :span="18" :offset="3">
                 <div class="grid-content bg-purple">
                     <div class="head">
-                        <h1>FeshFed Çekiliş Formu</h1>
+                        <h1>FashFed Çekiliş Formu</h1>
                     </div>
                 </div>
             </el-col>
@@ -35,7 +35,7 @@
                             dolor sit amet ipsum dolor sit amet ipsum dolor
                         </p>
                     </div>
-                    
+
                     <div class="success" v-if="formResponse">
                         <span>{{ alertMessage }}</span>
                         <span>Detaylar eposta adresinize gönderilmiştir.</span>
