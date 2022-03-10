@@ -1,4 +1,4 @@
-# feshfed-cekilis-client
+# fashfed-cekilis-client
 
 ## Build Setup
 
