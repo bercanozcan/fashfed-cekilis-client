@@ -35,6 +35,7 @@
                             dolor sit amet ipsum dolor sit amet ipsum dolor
                         </p>
                     </div>
+                    
                     <div class="success" v-if="formResponse">
                         <span>{{ alertMessage }}</span>
                         <span>Detaylar eposta adresinize gönderilmiştir.</span>
