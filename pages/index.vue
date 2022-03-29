@@ -751,6 +751,11 @@ body {
     text-align: center;
 }
 
+.el-input__inner,
+.el-textarea__inner {
+    border-color: #c9c9c9;
+}
+
 @media (max-width: 767px) {
     .aggreeList li {
         font-size: 14px;
