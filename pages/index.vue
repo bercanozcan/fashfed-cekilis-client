@@ -630,6 +630,10 @@ body {
     border-radius: 0px;
 }
 
+.el-select {
+    width: 100%;
+}
+
 .el-select .el-input .el-input__inner {
     height: 62px !important;
     width: 100%;
@@ -746,4 +750,24 @@ body {
     border-radius: -1px;
     text-align: center;
 }
+
+@media (max-width: 767px) {
+    .aggreeList li {
+        font-size: 14px;
+    }
+    .logoImage {
+        height: 34px;
+    }
+    .header {
+        height: 70px;
+    }
+    .description {
+        font-size: 13px;
+    }
+    .birthdaySpan {
+        font-size: 15px;
+    }
+}
+
+
 </style>
