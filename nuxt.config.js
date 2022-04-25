@@ -27,7 +27,9 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/element-ui',
-    '@/plugins/vue-the-mask.js'
+    '@/plugins/vue-the-mask.js',
+    '@/plugins/vue-datatable.js',
+    '@/plugins/xlsx.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,7 +40,39 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
+  ],
+
+  axios: {
+    baseURL: 'http://127.0.0.1:8000/api/',
+    headers: {
+			accept: 'application/json',
+		},
+  },
+
+  auth: {
+    strategies: {
+      local: {
+        token: {
+					property: "access_token",
+					global: true,
+					required: true,
+					type: "Bearer"
+				},
+				user: {
+					property: "data",
+					autoFetch: false
+				},
+        endpoints: {
+          login: { url: 'login', method: 'post' },
+          logout: { url: 'logout', method: 'post' },
+          user: {url : 'user', method: 'post'}
+        }
+      }
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -546,17 +546,17 @@ export default {
 
             this.loading = true;
 
-            await this.$axios.$post(
-                "http://127.0.0.1:8000/api/draws",
+            await this.$axios.post(
+                "draws",
                 data
             ).then((response) => {
-                if(response.status){
+                if(response.data.status){
                     this.formResponse = true
-                    this.alertMessage = response.message
+                    this.alertMessage = response.data.message
                 }else{
                     this.$notify({
                         title: 'Uyarı!',
-                        message: response.message,
+                        message: response.data.message,
                         type: 'warning'
                     });
                 }
@@ -605,7 +605,7 @@ body {
 }
 
 .head h1 {
-    font-width: 500;
+    font-weight: 500;
     font-size: 22px;
 }
 
