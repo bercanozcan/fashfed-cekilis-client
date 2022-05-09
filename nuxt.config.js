@@ -46,7 +46,7 @@ export default {
   ],
 
   axios: {
-    baseURL: 'http://fashfed.bercanozcan.com/api/',
+    baseURL: 'https://fashfed.bercanozcan.com/api/',
     headers: {
 			accept: 'application/json',
 		},
