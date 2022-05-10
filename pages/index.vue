@@ -38,7 +38,6 @@
 
                     <div class="success" v-if="formResponse">
                         <span>{{ alertMessage }}</span>
-                        <span>Detaylar eposta adresinize gönderilmiştir.</span>
                     </div>
                     <el-form v-if="!formResponse">
                         <el-form-item class="formItem">
