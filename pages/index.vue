@@ -174,6 +174,7 @@
                                 class="formInput"
                                 :autofocus="true"
                                 prop="email"
+                                type="email"
                                 :class="{
                                     borderActive: errorField.name.status,
                                 }"
