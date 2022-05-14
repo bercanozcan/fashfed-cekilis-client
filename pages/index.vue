@@ -192,6 +192,7 @@
                                 class="formInput"
                                 :autofocus="true"
                                 prop="mobile"
+                                type="tel"
                                 :class="{
                                     borderActive: errorField.name.status,
                                 }"
